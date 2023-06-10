@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int cherries = 0;
+    private int collectables = 0;
     [SerializeField] private Text cherriesText;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,8 +13,8 @@ public class ItemCollector : MonoBehaviour
          if (collision.gameObject.CompareTag("Cherry"))
          {
             Destroy(collision.gameObject);
-            cherries++;
-            cherriesText.text = "Cherries: " + cherries;
+            collectables++;
+            cherriesText.text = "Collectables: " + collectables;
          }
     }
 }

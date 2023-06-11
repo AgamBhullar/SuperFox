@@ -18,8 +18,8 @@ Goals: Player needs to run and collect cherries and dodge opponents to get to th
 
 ## Controls:
   ### Keyboard:
-    '⬅️' '➡️' for movement.
-    '⬆️' for jump.
+    '⬅️' '➡️' 'A' 'D' for movement.
+    '⬆️' 'W' for jump.
 
 
 # Main Roles

@@ -1,8 +1,12 @@
 # ECS-189L_finalProject
 
-To Run properly, go to file
-Under file go to Build settings
-Under Build settings go to Add Open Scenes to add all scenes/levels
+To Run properly, go to **file**
+
+Under file go to **Build settings**
+
+Under Build settings go to **Add Open Scenes** to add all scenes/levels
+
+![](https://github.com/jassgone/ECS-189L_finalProject/blob/main/Instruction.gif?raw=true)
 
 [Reference code for role explanation](https://github.com/M2neko/Due_Tonight)
 
@@ -41,6 +45,9 @@ The Super Fox game, in essence, is a physics-based platformer game, and as such,
 For jumping, we used the built-in physics engine of the game development platform. We assigned a rigidbody component to the Fox character, which enabled us to apply a force to the character when the player presses the up key. This force propels the Fox upwards, and then gravity pulls it back down, creating a natural-looking jump arc. The jump was adjusted based on a fixed variable jumforce which was tweaked to make the move feel natural.
 
 [Contributors: Agam Bhullar]
+
+# Animation and Visuals
+
   
 # Sub-Roles
   Game Feel             : Jaspreet Singh <br>

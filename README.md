@@ -23,8 +23,8 @@ Goals: Player needs to run and collect cherries and dodge opponents to get to th
 
 
 # Main Roles
-  Input                 : Jaspreet Singh `<br>`
-  Movement/Physics      : Agam Bhullar `<br>`
+  Input                 : Jaspreet Singh <br>
+  Movement/Physics      : Agam Bhullar <br>
   Animation and Visuals : Olivia Qian `<br>`
   User Interface        : Alan Chuang `<br>`
   Game Logic            : Ameya Naik `<br>`

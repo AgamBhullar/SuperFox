@@ -23,11 +23,11 @@ Goals: Player needs to run and collect cherries and dodge opponents to get to th
 
 
 # Main Roles
-  Input                 : Jaspreet Singh
-  Movement/Physics      : Agam Bhullar
-  Animation and Visuals : Olivia Qian
-  User Interface        : Alan Chuang
-  Game Logic            : Ameya Naik
+  Input                 : Jaspreet Singh `<br>`
+  Movement/Physics      : Agam Bhullar `<br>`
+  Animation and Visuals : Olivia Qian `<br>`
+  User Interface        : Alan Chuang `<br>`
+  Game Logic            : Ameya Naik `<br>`
   
 # Input
 The Super Fox game is a platform game, and therefore, the input handling is critical to the game experience. For basic movements such as run and jump, we rely on simple keystrokes. For instance, the "right" and "left" arrow keys are used to move the Fox character in the respective directions, while the "up" key is used for the jump action. The sensitivity and responsiveness of these controls have been carefully calibrated to ensure an optimal gaming experience.
@@ -43,11 +43,11 @@ For jumping, we used the built-in physics engine of the game development platfor
 [Contributors: Agam Bhullar]
   
 # Sub-Roles
-  Game Feel             : Jaspreet Singh
-  Gameplay Testing      : Agam Bhullar
-  Press Kit and Trailer : Olivia Qian
-  Narrative Design      : Alan Chuang
-  Audio                 : Ameya Naik
+  Game Feel             : Jaspreet Singh `<br>`
+  Gameplay Testing      : Agam Bhullar `<br>`
+  Press Kit and Trailer : Olivia Qian `<br>`
+  Narrative Design      : Alan Chuang `<br>`
+  Audio                 : Ameya Naik `<br>`
   
 # Game Feel
 The goal of the game feel sub-role is to make sure the player's interactions with the game are satisfying and impactful. To this end, we have introduced a number of features. When the Fox collects a cherry, we've created a simple animation to make the collection process feel more rewarding. Similarly, when the Fox kills an opponent by jumping over them, we've added a visual effect to emphasize the action.We also spent a considerable amount of time perfecting the physics of the Fox's jump. Getting the speed and landing feel right was an iterative process that involved numerous rounds of testing and adjusting. The aim was to make the jump feel responsive and satisfying for players, which is a critical aspect of game feel as discussed in our course.

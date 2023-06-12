@@ -1,13 +1,5 @@
 # ECS-189L_finalProject
 
-To Run properly, go to **file**
-
-Under file go to **Build settings**
-
-Under Build settings go to **Add Open Scenes** to add all scenes/levels
-
-![](https://github.com/jassgone/ECS-189L_finalProject/blob/main/Instruction.gif?raw=true)
-
 [Reference code for role explanation](https://github.com/M2neko/Due_Tonight)
 
 # Summary

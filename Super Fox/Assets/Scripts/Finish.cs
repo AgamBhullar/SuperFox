@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
     private bool levelCompleted = false;
+    private bool noBoss = true;
     private FinishPublisher finishPublisher;
     private Collider2D trigger;
     private SpriteRenderer rend;
@@ -18,6 +19,10 @@ public class Finish : MonoBehaviour
         trigger.enabled = false;
         rend.enabled = false;
         finishPublisher.InitializeFinish(UpdateFinish);
+        if (GameObject.FindGameObjectsWithTag("Boss").Length != 0)
+        {
+            this.noBoss = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,10 +41,15 @@ public class Finish : MonoBehaviour
 
     public void UpdateFinish(bool bossDead)
     {
-        if ((bossDead || GameObject.FindGameObjectsWithTag("Boss").Length == 0) && GameObject.FindGameObjectsWithTag("Cherry").Length <= 1)
+        if ((bossDead && GameObject.FindGameObjectsWithTag("Cherry").Length == 0) 
+        || (this.noBoss && GameObject.FindGameObjectsWithTag("Cherry").Length <= 1))
         {
             trigger.enabled = true;
             rend.enabled = true;
+        }
+        if (bossDead)
+        {
+            this.noBoss = true;
         }
     }
 }

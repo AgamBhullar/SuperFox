@@ -18,12 +18,16 @@ public class SoundManager : MonoBehaviour
     private List<SoundClip> sfxClips;
 
     [SerializeField]
-    private string sceneMusic;
+    private string initTrack;
 
     private SoundClip trackPlaying;
     private SoundClip trackFading;
     private SoundClip sfxPlaying;
 
+    public string GetMusicName()
+    {
+        return trackPlaying.title;
+    }
 
     void Awake()
     {
@@ -48,7 +52,7 @@ public class SoundManager : MonoBehaviour
         }
 
         //play initial track
-        this.PlayMusicTrack(sceneMusic);
+        this.PlayMusicTrack(initTrack);
     }
 
     public void PlayMusicTrack(string title)

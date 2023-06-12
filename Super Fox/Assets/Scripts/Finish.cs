@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +30,7 @@ public class Finish : MonoBehaviour
     {
         if (collision.gameObject.name == "Player" && !levelCompleted)
         {
+            FindObjectOfType<SoundManager>().PlaySoundEffect("NextLevel");
             levelCompleted = true;
             Invoke("FinishLevel", 1f);
         }
@@ -37,6 +39,18 @@ public class Finish : MonoBehaviour
     private void FinishLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (String.Equals(FindObjectOfType<SoundManager>().GetMusicName(), "Level1"))
+        {
+            FindObjectOfType<SoundManager>().PlayMusicTrack("Level2");
+        }
+        else if (String.Equals(FindObjectOfType<SoundManager>().GetMusicName(), "Level2"))
+        {
+            FindObjectOfType<SoundManager>().PlayMusicTrack("Level3");
+        }
+        else if (String.Equals(FindObjectOfType<SoundManager>().GetMusicName(), "Level3"))
+        {
+            FindObjectOfType<SoundManager>().PlayMusicTrack("Finish");
+        }
     }
 
     public void UpdateFinish(bool bossDead)

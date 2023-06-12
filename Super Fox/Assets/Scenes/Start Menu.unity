@@ -808,7 +808,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 1
+  m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -922,13 +922,13 @@ MonoBehaviour:
   - clip: {fileID: 8300000, guid: b7b649eff67303941a673ee8ce9bdf95, type: 3}
     audioSource: {fileID: 0}
     title: NextLevel
-    volume: 0.8
+    volume: 0.2
     pitch: 1
     loop: 0
   - clip: {fileID: 8300000, guid: 66cbc4a33a05d3b4691e0d3aceaa1ecb, type: 3}
     audioSource: {fileID: 0}
     title: Jump
-    volume: 0.8
+    volume: 0.2
     pitch: 1
     loop: 0
   - clip: {fileID: 8300000, guid: e09abc7ffd4b50a43ab1076417401bd2, type: 3}
@@ -937,7 +937,13 @@ MonoBehaviour:
     volume: 0.8
     pitch: 1
     loop: 0
-  sceneMusic: StartMenu
+  - clip: {fileID: 8300000, guid: c2aa94385cdaf1d43b550c4a3e85a65d, type: 3}
+    audioSource: {fileID: 0}
+    title: Dead
+    volume: 0.2
+    pitch: 1
+    loop: 0
+  initTrack: StartMenu
 --- !u!4 &1868434668
 Transform:
   m_ObjectHideFlags: 0

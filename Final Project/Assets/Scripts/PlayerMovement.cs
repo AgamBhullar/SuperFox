@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
         if (stompManager != null)
         {
             stompManager.InitializeJump(Jump);
-            Debug.Log("Initialized successfully");
         }
     }
 

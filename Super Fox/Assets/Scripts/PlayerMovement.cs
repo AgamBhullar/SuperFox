@@ -61,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        FindObjectOfType<SoundManager>().PlaySoundEffect("Jump");
         rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
     }
 

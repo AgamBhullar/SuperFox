@@ -14,7 +14,6 @@ public class StompManager : MonoBehaviour
 
     public void ExecuteStomp()
     {
-        FindObjectOfType<SoundManager>().PlaySoundEffect("Stomp");
         this.jump();
     }
 }

@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D cont;
     private Animator anim;
     private SpriteRenderer sprite;
+    private StompManager stompManager;
 
     private float moveX = 0f;
     [SerializeField] private float moveSpeed = 7f;
@@ -25,24 +26,42 @@ public class PlayerMovement : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         cont = GetComponent<BoxCollider2D>();
+        stompManager = GetComponent<StompManager>();
+        if (stompManager != null)
+        {
+            stompManager.InitializeJump(Jump);
+        }
     }
 
     // Update is called once per frame
     private void Update()
     {
         moveX = Input.GetAxisRaw("Horizontal");
+        if (rb2D.bodyType == RigidbodyType2D.Static)
+        {
+            return;
+        }
         rb2D.velocity = new Vector2(moveX * moveSpeed, rb2D.velocity.y);
         // rb2D.velocity = new Vector3(moveX * moveSpeed, rb2D.velocity.y, 0);
         // GameObject.transform.rotation = new Vector3(0,0,0);
 
         if (Input.GetButtonDown("Jump") && StayOnGround())
         {
-            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+            Jump();
             // rb2D.velocity = new Vector3(moveX * moveSpeed, rb2D.velocity.y, 0);
 
         }
 
         AnimationUpdate();
+    }
+
+    public void Jump()
+    {
+        if (rb2D.bodyType == RigidbodyType2D.Static)
+        {
+            return;
+        }
+        rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
     }
 
     private void AnimationUpdate()

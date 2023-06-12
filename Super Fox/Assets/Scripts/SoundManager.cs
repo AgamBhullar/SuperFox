@@ -17,6 +17,9 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private List<SoundClip> sfxClips;
 
+    [SerializeField]
+    private string sceneMusic;
+
     private SoundClip trackPlaying;
     private SoundClip trackFading;
     private SoundClip sfxPlaying;
@@ -45,7 +48,7 @@ public class SoundManager : MonoBehaviour
         }
 
         //play initial track
-        this.PlayMusicTrack("Factory");
+        this.PlayMusicTrack(sceneMusic);
     }
 
     public void PlayMusicTrack(string title)

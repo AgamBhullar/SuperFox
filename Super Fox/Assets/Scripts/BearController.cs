@@ -123,6 +123,7 @@ public class BearController : MonoBehaviour
     {
         // Destroy the enemy
         Destroy(gameObject);
+        FindObjectOfType<SoundManager>().PlaySoundEffect("BearRoar");
         this.finishPublisher.UpdateFinish(true);
     }
 }

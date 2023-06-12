@@ -21,6 +21,7 @@ public class ItemCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Cherry"))
         {
             Destroy(collision.gameObject);
+            FindObjectOfType<SoundManager>().PlaySoundEffect("GatheredCherry");
             collectables = initCollectibles - GameObject.FindGameObjectsWithTag("Cherry").Length + 1;
             cherriesText.text = "Collectables: " + collectables;
             finishPublisher.UpdateFinish(false);

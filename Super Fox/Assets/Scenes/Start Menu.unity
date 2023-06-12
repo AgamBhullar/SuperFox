@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0005187988, y: 0}
+  m_AnchoredPosition: {x: -0.00048828125, y: 0}
   m_SizeDelta: {x: -0.0010376, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953781292
@@ -838,3 +838,124 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1868434666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1868434668}
+  - component: {fileID: 1868434667}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1868434667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868434666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6020da9d96f76c4ab34d893822d7c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMixerGroup: {fileID: 2533814632396168556, guid: 00cff2afae853a348808c43d11d9a9dd, type: 2}
+  sfxMixerGroup: {fileID: 3468307724742771576, guid: 00cff2afae853a348808c43d11d9a9dd, type: 2}
+  musicTracks:
+  - clip: {fileID: 8300000, guid: b6dc04f2884eb5b46b675390b1e75e84, type: 3}
+    audioSource: {fileID: 0}
+    title: StartMenu
+    volume: 0.1
+    pitch: 1
+    loop: 1
+  - clip: {fileID: 8300000, guid: 6979d52fda0579441a2122b95abaf337, type: 3}
+    audioSource: {fileID: 0}
+    title: Level1
+    volume: 0.1
+    pitch: 1
+    loop: 1
+  - clip: {fileID: 8300000, guid: 57f12d84ebf04324e92e37dc70ac26b1, type: 3}
+    audioSource: {fileID: 0}
+    title: Level2
+    volume: 0.1
+    pitch: 1
+    loop: 1
+  - clip: {fileID: 8300000, guid: 596e0f53d0760684897f73aa6d85324a, type: 3}
+    audioSource: {fileID: 0}
+    title: Level3
+    volume: 0.1
+    pitch: 1
+    loop: 1
+  - clip: {fileID: 8300000, guid: 0c2f5e196afe4644d9b1ffb8d644851d, type: 3}
+    audioSource: {fileID: 0}
+    title: Finish
+    volume: 0.1
+    pitch: 1
+    loop: 1
+  sfxClips:
+  - clip: {fileID: 8300000, guid: a0b43c63f8911ef4bb1ffca1ca5845c3, type: 3}
+    audioSource: {fileID: 0}
+    title: GatheredCherry
+    volume: 0.8
+    pitch: 1
+    loop: 0
+  - clip: {fileID: 8300000, guid: 0266e8cb404f13741b156470faf67123, type: 3}
+    audioSource: {fileID: 0}
+    title: Stomp
+    volume: 0.8
+    pitch: 1
+    loop: 0
+  - clip: {fileID: 8300000, guid: 366e98a2f0bef11429cd4382c6db8b41, type: 3}
+    audioSource: {fileID: 0}
+    title: BearRoar
+    volume: 0.8
+    pitch: 1
+    loop: 0
+  - clip: {fileID: 8300000, guid: b7b649eff67303941a673ee8ce9bdf95, type: 3}
+    audioSource: {fileID: 0}
+    title: NextLevel
+    volume: 0.2
+    pitch: 1
+    loop: 0
+  - clip: {fileID: 8300000, guid: 66cbc4a33a05d3b4691e0d3aceaa1ecb, type: 3}
+    audioSource: {fileID: 0}
+    title: Jump
+    volume: 0.2
+    pitch: 1
+    loop: 0
+  - clip: {fileID: 8300000, guid: e09abc7ffd4b50a43ab1076417401bd2, type: 3}
+    audioSource: {fileID: 0}
+    title: NextLevelDenied
+    volume: 0.8
+    pitch: 1
+    loop: 0
+  - clip: {fileID: 8300000, guid: c2aa94385cdaf1d43b550c4a3e85a65d, type: 3}
+    audioSource: {fileID: 0}
+    title: Dead
+    volume: 0.2
+    pitch: 1
+    loop: 0
+  initTrack: StartMenu
+--- !u!4 &1868434668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868434666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 88.28749, y: 17.599728, z: -4.5730853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

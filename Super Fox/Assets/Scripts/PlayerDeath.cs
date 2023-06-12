@@ -33,6 +33,7 @@ public class PlayerDeath : MonoBehaviour
     public void Die()
     {
         rb2D.bodyType = RigidbodyType2D.Static;
+        FindObjectOfType<SoundManager>().PlaySoundEffect("Dead");
         anim.SetTrigger("death");
     }
 

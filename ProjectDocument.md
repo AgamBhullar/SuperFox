@@ -1,3 +1,5 @@
+[Reference1](https://github.com/M2neko/Due_Tonight) , [Reference2](https://github.com/dr-jam/GameplayProgramming/blob/master/GameProject.md)
+
 # Game Basic Information #
 
 ## Summary ##

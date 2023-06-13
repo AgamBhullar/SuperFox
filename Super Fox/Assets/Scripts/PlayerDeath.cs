@@ -7,11 +7,28 @@ public class PlayerDeath : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Animator anim;
+    private SoundManager soundManager;
 
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        soundManager = FindObjectOfType<SoundManager>();
+        
+        if(rb2D == null)
+        {
+            Debug.LogError("No Rigidbody2D component found on the player object.");
+        }
+        
+        if(anim == null)
+        {
+            Debug.LogError("No Animator component found on the player object.");
+        }
+
+        if(soundManager == null)
+        {
+            Debug.LogError("No SoundManager found in the scene.");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,7 +41,7 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
-        if(rb2D.velocity.y < -35f)
+        if(rb2D != null && rb2D.velocity.y < -35f)
         {
             Die();
         }
@@ -32,9 +49,20 @@ public class PlayerDeath : MonoBehaviour
 
     public void Die()
     {
-        rb2D.bodyType = RigidbodyType2D.Static;
-        FindObjectOfType<SoundManager>().PlaySoundEffect("Dead");
-        anim.SetTrigger("death");
+        if(rb2D != null)
+        {
+            rb2D.bodyType = RigidbodyType2D.Static;
+        }
+
+        if(soundManager != null)
+        {
+            soundManager.PlaySoundEffect("Dead");
+        }
+        
+        if(anim != null)
+        {
+            anim.SetTrigger("death");
+        }
     }
 
     public void RestartLevel()

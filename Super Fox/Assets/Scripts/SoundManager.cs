@@ -24,6 +24,8 @@ public class SoundManager : MonoBehaviour
     private SoundClip trackFading;
     private SoundClip sfxPlaying;
 
+    public static SoundManager instance;
+
     public string GetMusicName()
     {
         return trackPlaying.title;
@@ -31,6 +33,17 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         foreach (var track in this.musicTracks)
         {
             track.audioSource = this.gameObject.AddComponent<AudioSource>();

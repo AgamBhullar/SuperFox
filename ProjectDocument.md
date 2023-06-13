@@ -46,6 +46,7 @@ All these elements are designed with simplicity and ease of use in mind, ensurin
 
 The Super Fox game, in essence, is a physics-based platformer game, and as such, we had to ensure the movement and physics within the game felt realistic and satisfying. For the running movement, we used a simple velocity function that updates the Fox's x position based on player input and a fixed speed variable(moveSpeed). This method provided a smooth and responsive movement. 
 For jumping, we used the built-in physics engine of the game development platform. We assigned a rigidbody component to the Fox character, which enabled us to apply a force to the character when the player presses the up key. This force propels the Fox upwards, and then gravity pulls it back down, creating a natural-looking jump arc. The jump was adjusted based on a fixed variable jumforce which was tweaked to make the move feel natural.
+We also used waypoints to give directions to the floating platform and trap items, which allows traps/enemies to move in a certain direction. We used our jump tactic to kill enemies. By using the jump tactic, the player can jump on the enemies head and eliminate them.  
 
 [Contributors: Agam Bhullar]
 

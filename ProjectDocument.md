@@ -42,8 +42,6 @@ The User Interface (UI) in Super Fox is designed to be minimalistic and intuitiv
 All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind.
 [Contributors:Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
-**Describe your user interface and how it relates to gameplay. This can be done via the template.**
-
 ## Movement/Physics
 
 The Super Fox game, in essence, is a physics-based platformer game, and as such, we had to ensure the movement and physics within the game felt realistic and satisfying. For the running movement, we used a simple velocity function that updates the Fox's x position based on player input and a fixed speed variable(moveSpeed). This method provided a smooth and responsive movement. 

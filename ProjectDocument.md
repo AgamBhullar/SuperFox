@@ -39,7 +39,7 @@ The primary responsibilities included managing project timelines, coordinating t
 
 ## User Interface
 The User Interface (UI) in Super Fox is designed to be minimalistic and intuitive, allowing players to focus on the gameplay rather than the background and other fuff. The UI for the purposes of this game only consists of the in-game UI. The UI consists of a consumables counter to keep a track of the fruits consumed in the level and a caution to collect all before advancing to next level.
-All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind.
+All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind, which is to minimize the learning curve required in the game, so players can jump straight into the gameplay, without having to learn complicated controls or menu navigation.
 [Contributors:Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
 ## Movement/Physics

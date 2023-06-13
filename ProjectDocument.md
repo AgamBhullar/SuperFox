@@ -39,13 +39,14 @@ The primary responsibilities included managing project timelines, coordinating t
 
 ## User Interface
 The User Interface (UI) in Super Fox is designed to be minimalistic and intuitive, allowing players to focus on the gameplay rather than the background and other fuff. The UI for the purposes of this game only consists of the in-game UI. The UI consists of a consumables counter to keep a track of the fruits consumed in the level and a caution to collect all before advancing to next level.
-All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind.
+All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind, which is to minimize the learning curve required in the game, so players can jump straight into the gameplay, without having to learn complicated controls or menu navigation.
 [Contributors:Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
 ## Movement/Physics
 
 The Super Fox game, in essence, is a physics-based platformer game, and as such, we had to ensure the movement and physics within the game felt realistic and satisfying. For the running movement, we used a simple velocity function that updates the Fox's x position based on player input and a fixed speed variable(moveSpeed). This method provided a smooth and responsive movement. 
 For jumping, we used the built-in physics engine of the game development platform. We assigned a rigidbody component to the Fox character, which enabled us to apply a force to the character when the player presses the up key. This force propels the Fox upwards, and then gravity pulls it back down, creating a natural-looking jump arc. The jump was adjusted based on a fixed variable jumforce which was tweaked to make the move feel natural.
+We also used waypoints to give directions to the floating platform and trap items, which allows traps/enemies to move in a certain direction. We used our jump tactic to kill enemies. By using the jump tactic, the player can jump on the enemies head and eliminate them.  
 
 [Contributors: Agam Bhullar]
 

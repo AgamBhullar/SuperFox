@@ -52,6 +52,36 @@ We also used waypoints to give directions to the floating platform and trap item
 
 ## Animation and Visuals
 
+**List your assets including their sources, and licenses.**
+
+[The super fox](https://assetstore.unity.com/packages/2d/characters/sunny-land-103349#description) - From Unity Asset Store;
+
+[Enemy Bear](https://assetstore.unity.com/packages/2d/characters/sunny-land-103349#description) - From Unity Asset Store;
+
+[Other enemies](https://assetstore.unity.com/packages/2d/characters/sunny-land-103349#description) - From Unity Asset Store;
+
+[pixel tile 1](https://assetstore.unity.com/packages/2d/characters/sunny-land-103349#description) - From Unity Asset Store;
+
+[pixel tile 2](https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360z) - From Unity Asset Store;
+
+[Background 1](https://assetstore.unity.com/packages/2d/characters/sunny-land-103349#description) - From Unity Asset Store;
+
+[Background 2](https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360z) - From Unity Asset Store;
+
+### Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.
+
+After the first discussion, we decided on the story behind the game. We set the story in the forest. The story outlines that the protagonist living in the forest goes out to collect food, encounters and overcomes many difficulties, and finally returns home.
+With a clear story background, we agreed to make a 2D platformer adventure game. So when designing the main character, we wanted it to be brave and smart. Still, at the same time, we wanted to make sure we created a spirited and lovable image that would support the narrative while appealing as much as possible to our target audience, college students. Among the various animals that inhabit the forest, we finally settled on the fox as our main character. Then, we used Procreate to create our [initial vision of the game]().
+
+We brainstormed about the difficulties that the main character would have to overcome in the story. The first thing we determined was that we could use the natural environment of the forest to create levels, such as cliffs, mountains, etc. We can also use the fox's greatest enemy in the forest - the bear as the "ultimate boss" he needs to defeat and other animals as enemies. Then, we thought about the possible artificial traps in the forest and decided to use spikes, rolling gears, etc., as obstacles. 
+
+After determining the image needed, we started looking for suitable assets. We found this set of assets in the Unity asset store that fit perfectly with our design inspiration. It contains the character fox, the important elements of the forest - the trees, the rocks, and the animation of a bear. It also contains animations corresponding to the movements we needed to add to the main character, the fox - running, jumping, falling, etc. Another reason why we chose this set of assets is that it is in 2D pixel-art style, which fits our need for our game to be able to follow the feel of retro platformers (like Mario).
+
+To enhance the game feel with animation, for example, we added animations when the player collects fruits in each level, making collecting movement more attractive and thus achieving the effect of increasing the player's satisfaction and feeling of achievement. 
+
+We tried to add more things to the animation and visuals to make our game more intriguing and juicy, but some effects were not possible because of time constraints. For example, adding disappearing animations for collected fruits, adding animations for enemy deaths, etc.
+
+[Contributors: Olivia Qian, Agam Bhullar, and Jaspreet Singh]
 
 ## Input
 

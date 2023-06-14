@@ -38,9 +38,9 @@ The primary responsibilities included managing project timelines, coordinating t
 **Describe the steps you took in your role as producer. Typical items include group scheduling mechanism, links to meeting notes, descriptions of team logistics problems with their resolution, project organization tools (e.g., timelines, depedency/task tracking, Gantt charts, etc.), and repository management methodology.**
 
 ## User Interface
-The User Interface (UI) in Super Fox is designed to be minimalistic and intuitive, allowing players to focus on the gameplay rather than the background and other fuff. The UI for the purposes of this game only consists of the in-game UI. The UI consists of a consumables counter to keep a track of the fruits consumed in the level and a caution to collect all before advancing to next level.
+The User Interface (UI) in Super Fox is designed to be minimalistic and intuitive, allowing players to focus on the gameplay rather than the background and other fuff. The UI for the purposes of this game only consists of the in-game UI. The UI consists of a consumables counter to keep track of the fruits consumed in the level and caution to collect all before advancing to the next level.
 All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind, which is to minimize the learning curve required in the game, so players can jump straight into the gameplay, without having to learn complicated controls or menu navigation.
-Jaspreet and Agam helped Alan with finding the right assets and successfully building the world for all three levels. Jaspreet came up with the idea of having a moving platform in level 1. Agam came up with the idea of setting up enemies in level 3.
+Jaspreet and Agam helped Alan with finding the right assets and successfully building the world for all three levels. Jaspreet came up with the idea of having a moving platform in level 1. Agam came up with the idea of setting up enemies on level 3.
 [Contributors: Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
 ## Movement/Physics

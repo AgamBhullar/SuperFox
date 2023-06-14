@@ -31,7 +31,7 @@ Goals: Player needs to run and collect cherries and dodge opponents to get to th
   User Interface        : Alan Chuang <br>
   Game Logic            : Ameya Naik <br>
 ## Producer
-The primary responsibilities included managing project timelines, coordinating team tasks, and ensuring smooth communication among team members.A discord server was setup to have communication between the team and all members were reached out to be ontime and on schedule. Also a github repository was setup with a seperate branch for everyone, however producers worked together in the main branch.
+The primary responsibilities included managing project timelines, coordinating team tasks, and ensuring smooth communication among team members. A discord server was setup by Agam Bhullar to have communication between the team and all members were reached out to be ontime and on schedule. Agam Bhullar setup weekly meetings between group members and made sure everyone participated and engaged during the meetings. A github repository was setup by Jaspreet Singh with a seperate branch for everyone, however producers worked together in the main branch. Jaspreet was reponsible for checking that all the team members are correctly and responsibily committing their work on github which would motivate the team to make progress towards finishing the game.
 
 [Contributors: Jaspreet Singh and Agam Bhullar]
 
@@ -40,6 +40,7 @@ The primary responsibilities included managing project timelines, coordinating t
 ## User Interface
 The User Interface (UI) in Super Fox is designed to be minimalistic and intuitive, allowing players to focus on the gameplay rather than the background and other fuff. The UI for the purposes of this game only consists of the in-game UI. The UI consists of a consumables counter to keep a track of the fruits consumed in the level and a caution to collect all before advancing to next level.
 All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind, which is to minimize the learning curve required in the game, so players can jump straight into the gameplay, without having to learn complicated controls or menu navigation.
+Jaspreet and Agam helped Alan with finding the right assets and successfully building the world for all three levels. Jaspreet came up with the idea of having a moving platform in level 1. Agam came up with the idea of setting up enemies in level 3.
 [Contributors:Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
 ## Movement/Physics
@@ -80,6 +81,8 @@ After determining the image needed, we started looking for suitable assets. We f
 To enhance the game feel with animation, for example, we added animations when the player collects fruits in each level, making collecting movement more attractive and thus achieving the effect of increasing the player's satisfaction and feeling of achievement. 
 
 We tried to add more things to the animation and visuals to make our game more intriguing and juicy, but some effects were not possible because of time constraints. For example, adding disappearing animations for collected fruits, adding animations for enemy deaths, etc.
+Agam Bhullar helped Olivia Qian make the player animations come to life by connecting all the animations together in the animator window. 
+Jaspreet helped Olivia with scripting of the enemy movement. 
 
 [Contributors: Olivia Qian, Agam Bhullar, and Jaspreet Singh]
 

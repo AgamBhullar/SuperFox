@@ -93,6 +93,13 @@ The Fox character can also interact with the game environment, such as collectin
 
 ## Game Logic
 
+There were two main game logic areas. They were the stomp mechanic and the level completion system.
+
+1. The stomp mechanic: If the player jumps on an enemies head, this process leads to the playing of a specialized audio queue and a jump. This was implemented using the pubsub pattern in [StompManager.cs](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/StompManager.cs#L1). The player is automatically subscribed to this class in its `Start` function, where it provides a delegate to the `Jump` action. In the `EnemyDeath.cs` classes, any time an enemy death is triggered with the `OnTriggerEnter2D` function when the player's foot contacts the enemy's head, we also publish to the `StompManager` class instructing the jump and the stomp sound effect.
+
+2. The level completion system. For this, the player needs to collect all the fruits and defeat the boss (the bear) in order to progress to the next level. This was implemented using a boolean value in [Finish.cs](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/Finish.cs#L12) called `levelCompleted`. Essentially, when all the criteria is met, the goal is that the value of this boolean changes to true allowing progress to the next level. If the criteria is not met, we play an error sound effect and desplay a message instructing the player on what needs to be done. How do we check for these criteria though, without doing it every frame? Once again, we used the pubsub pattern in [FinishPublisher.cs](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/FinishPublisher.cs#L1). This exposed a function inside `Finish.cs` which checks the state of the level, and changes the boolean accordingly. Both the `ItemCollector.cs` and `EnemyDeath.cs` become publishers, and can pass messages to the `Finish.cs` to tell it that it should re-check the state of the level, and possibly enable the finish line.
+
+[Contributors: Ameya Naik]
 
 # Sub-Roles
   Game Feel             : Jaspreet Singh <br>
@@ -102,7 +109,7 @@ The Fox character can also interact with the game environment, such as collectin
   Audio                 : Ameya Naik <br>
 
 ## Cross-Platform
-For the release of Super Fox, we targeted three main platforms: Windows PC and MacOS
+For the release of Super Fox, we targeted two main platforms: Windows PC and MacOS
 
 Windows PC:
 Targeting the Windows platform was the most straightforward process as our game development environment (Unity) natively supports building games for Windows. During the development process, we encountered an issue related to varying screen resolutions and sizes on different Windows devices. We managed to overcome this by implementing a dynamic resolution system that adjusts the game view based on the player's device resolution.
@@ -115,9 +122,23 @@ Unity also supports MacOS, but we had to ensure the game's performance was optim
 
 **List your assets including their sources and licenses.**
 
+For audio, we used a combination of sfx from freesound.org and music from the Unity Asset Store. All the tracks and their liscences can be found in the [README.md](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/World2/Music%20tracks/README.md) located in the `Music tracks` folder.
+
+For the scripts [SoundManager.cs](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/SoundManager.cs#L1) and [SoundClip.cs](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/SoundClip.cs#L1), these were essentially used almost as is from our four excercises. These allowed us an easy way to play any audio at any time from any script.
+
+[Contributors: Ameya Naik]
+
 **Describe the implementation of your audio system.**
 
+The implementation code wise of the audio system was generally fairly simple. First, we used the five tracks from the assets store and paired each one with a scene, two of them going to menu music and the other three going to level music. The way we were able to have the sound manager persist through different scenes was by a [DontDestroyOnLoad](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/StartMenu.cs#LL9C4-L9C4). This ensures that when we load into the beginning of the game, the sound manager is always loaded and stays loaded through all the levels. In order to change the music, the code which switches tracks is executed before a level switch [here](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/StartMenu.cs#L15) and [here](https://github.com/jassgone/ECS-189L_finalProject/blob/7d0df97dd4df57461b3bb5cd255cbd796f97e183/Super%20Fox/Assets/Scripts/Finish.cs#LL52C1-L52C1). All sfx was also played when relevant, using the `PlaySoundEffect` method.
+
+[Contributors: Ameya Naik]
+
 **Document the sound style.** 
+
+The sound style for music is that of a retro-ish video game. The menu music and level 1 have fairly neutral sounding music which is upbeat. Levels 2 and 3 have slightly more suspenseful music to go with the increased difficulty. For sfx, care was taken to select tracks which seemed retro, but were generally clean and not overbearing.
+
+[Contributors: Ameya Naik]
 
 ## Gameplay Testing
 

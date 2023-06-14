@@ -159,7 +159,9 @@ To incorporate the narrative into the game, we used a mix of visual storytelling
 
 **Include links to your presskit materials and trailer.**
 [Trailer](https://youtu.be/mmAPyFJ5Dew) -- Published on Youtube; 
+
 [Music](https://www.youtube.com/watch?v=mRN_T6JkH-c&list=PPSV) in the trailer;
+
 [Press kit](https://tekuteki.itch.io/super-fox) -- published on itch.io;
 
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**

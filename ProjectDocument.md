@@ -41,7 +41,7 @@ The primary responsibilities included managing project timelines, coordinating t
 The User Interface (UI) in Super Fox is designed to be minimalistic and intuitive, allowing players to focus on the gameplay rather than the background and other fuff. The UI for the purposes of this game only consists of the in-game UI. The UI consists of a consumables counter to keep a track of the fruits consumed in the level and a caution to collect all before advancing to next level.
 All these elements are designed with simplicity and ease of use in mind, ensuring players can navigate the game easily and focus on the gameplay. The UI design was designed with the overall theme of the game in mind, which is to minimize the learning curve required in the game, so players can jump straight into the gameplay, without having to learn complicated controls or menu navigation.
 Jaspreet and Agam helped Alan with finding the right assets and successfully building the world for all three levels. Jaspreet came up with the idea of having a moving platform in level 1. Agam came up with the idea of setting up enemies in level 3.
-[Contributors:Agam Bhullar, Jaspreet Singh, and Alan Chuang]
+[Contributors: Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
 ## Movement/Physics
 
@@ -154,9 +154,9 @@ From the testing, we made several important findings and improvements. For insta
 
 The narrative in Super Fox is embedded into the gameplay experience. While it's a platformer game, we've created a simple narrative that helps to immerse players into the game world. The Fox character is on a journey to gather all the cherries in the advanced forest(worlds) while avoiding or defeating obstacles. Each level represents a different part of the said forest, and the increased difficulty in the Fox's journey getting more challenging as it goes deeper into the forest, analagous to getting deeper or advancing in life.
 
-To incorporate the narrative into the game, we used a mix of visual storytelling and gameplay systems. The visual assets were chosen to reflect the narrative setting, with each level having a unique look that corresponds to indicate a different mess you get into. The gameplay systems, like collecting cherries and defeating opponents, are tied into the narrative, representing the challenges the Fox faces on its journey and saying there always is a way(wink wink).
+Agam and Jaspreet helped Alan incorporate the narrative into the game, we used a mix of visual storytelling and gameplay systems. The visual assets were chosen to reflect the narrative setting, with each level having a unique look that corresponds to indicate a different mess you get into. The gameplay systems, like collecting cherries and defeating opponents, are tied into the narrative, representing the challenges the Fox faces on its journey and saying there always is a way(wink wink).
 
-[Contributors:Agam Bhullar, Jaspreet Singh, and Alan Chuang]
+[Contributors: Agam Bhullar, Jaspreet Singh, and Alan Chuang]
 
 ## Press Kit and Trailer
 

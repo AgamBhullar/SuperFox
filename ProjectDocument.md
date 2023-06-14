@@ -158,8 +158,15 @@ To incorporate the narrative into the game, we used a mix of visual storytelling
 ## Press Kit and Trailer
 
 **Include links to your presskit materials and trailer.**
+[Trailer](https://youtu.be/mmAPyFJ5Dew) -- Published on Youtube; 
+[Music](https://www.youtube.com/watch?v=mRN_T6JkH-c&list=PPSV) in the trailer;
+[Press kit](https://tekuteki.itch.io/super-fox) -- published on itch.io;
 
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
+I made this trailer using a video recording of the game. In the trailer, I chose videos of some very difficult levels in the game, trying to pique the player's interest by contrasting the difficulty before and after the level. These levels are also the parts of the game that we put the most effort into, such as the movement of gear obstacles, the way the ultimate enemy is defeated, etc. 
+The press kit is published on itch.io. I chose itch.io because of its reputation in the game community and also because of its ease of use. In the press kit, I included the link to the trailer, the link to our github page, a short description of the game, the release date and the price. I believe that to keep the information as short and clear as possible in the press kit it important because a press kit is supposed to provide information to the players. In the press kit, I chose screenshots of the most engaging and challenging parts of each level, hoping to stimulate the viewer's interest in this way as much as possible along with the information providing.
+
+[Contributior: Olivia Qian]
 
 
 
